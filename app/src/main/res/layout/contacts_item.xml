@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/card_view_bg">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp">
+
+        <TextView
+            android:id="@+id/text_icone"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@drawable/circle_view_bg"
+            android:gravity="center"
+            android:text="F"
+            android:textColor="@android:color/white"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/text_card_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/text_icone"
+            android:layout_marginStart="18dp"
+            android:layout_toEndOf="@id/text_icone"
+            android:text="Facebook"
+            android:textColor="@color/grayText"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/text_card_telephone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text_card_name"
+            android:layout_alignStart="@id/text_card_name"
+            android:ellipsize="marquee"
+            android:singleLine="true"
+            android:text="(62) 99999-9999"
+            android:textColor="@color/grayText"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/text_card_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text_card_telephone"
+            android:layout_alignStart="@id/text_card_telephone"
+            android:ellipsize="marquee"
+            android:singleLine="true"
+            android:text="facebook@facebook.com"
+            android:textColor="@color/grayText"
+            android:layout_marginEnd="24dp"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>

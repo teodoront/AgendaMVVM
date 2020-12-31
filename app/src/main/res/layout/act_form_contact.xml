@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:orientation="vertical"
+    tools:context=".view.FormContactActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <EditText
+            android:id="@+id/edt_name_cont"
+            style="@style/MeuApp"
+            android:layout_marginTop="64dp"
+            android:hint="Nome"
+            android:inputType="textCapWords" />
+
+        <EditText
+            android:id="@+id/edt_email_cont"
+            style="@style/MeuApp"
+            android:layout_marginTop="64dp"
+            android:hint="Email"
+            android:inputType="textEmailAddress" />
+
+        <EditText
+            android:id="@+id/edt_tel_cont"
+            style="@style/MeuApp"
+            android:layout_marginTop="64dp"
+            android:hint="Telefone"
+            android:inputType="number" />
+
+        <Button
+            android:id="@+id/btn_save_cont"
+            style="@style/MeuApp"
+            android:layout_marginTop="42dp"
+            android:background="@drawable/button_background"
+            android:text="Salvar"
+            android:textColor="@android:color/white"/>
+
+    </LinearLayout>
+
+</ScrollView>
