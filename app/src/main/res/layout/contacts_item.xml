@@ -13,7 +13,7 @@
         android:layout_marginBottom="16dp">
 
         <TextView
-            android:id="@+id/text_icone"
+            android:id="@+id/text_icon"
             android:layout_width="48dp"
             android:layout_height="48dp"
             android:background="@drawable/circle_view_bg"
@@ -26,9 +26,9 @@
             android:id="@+id/text_card_name"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_alignTop="@id/text_icone"
+            android:layout_alignTop="@id/text_icon"
             android:layout_marginStart="18dp"
-            android:layout_toEndOf="@id/text_icone"
+            android:layout_toEndOf="@id/text_icon"
             android:text="Facebook"
             android:textColor="@color/grayText"
             android:textSize="18sp" />

@@ -155,14 +155,13 @@ public class ContactsRepository {
         } catch (Exception e) {
             return false;
         }
-
     }
 
     public boolean delete(int id) {
         try {
             SQLiteDatabase db = this.mHelper.getWritableDatabase();
 
-            String where = DataBaseConstants.CONTACTS.COLUMNS.ID;
+            String where = DataBaseConstants.CONTACTS.COLUMNS.ID + " = ?";
             String[] arguments = {String.valueOf(id)};
             db.delete(DataBaseConstants.CONTACTS.TABLE_NAME, where, arguments);
             db.close();

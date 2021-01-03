@@ -12,11 +12,12 @@ import java.util.List;
 
 import br.com.orlando.myapplication.R;
 import br.com.orlando.myapplication.model.ContactModel;
+import br.com.orlando.myapplication.view.listener.OnListClick;
 import br.com.orlando.myapplication.view.viewholder.ContactsViewHolder;
 
 public class ContactAdapter extends RecyclerView.Adapter<ContactsViewHolder> {
     private List<ContactModel> mList = new ArrayList<>();
-
+    private OnListClick mListener;
 
 
     @NonNull
@@ -32,7 +33,7 @@ public class ContactAdapter extends RecyclerView.Adapter<ContactsViewHolder> {
     @Override
     public void onBindViewHolder(@NonNull ContactsViewHolder holder, int position) {
 
-        holder.bind(this.mList.get(position));
+        holder.bind(this.mList.get(position), this.mListener);
     }
 
     @Override
@@ -42,8 +43,14 @@ public class ContactAdapter extends RecyclerView.Adapter<ContactsViewHolder> {
 
 
     //trazer a lista
-    public void attachList(List<ContactModel> list){
+    public void attachList(List<ContactModel> list) {
         this.mList = list;
         notifyDataSetChanged();
+    }
+
+    public void attachListener(OnListClick listener) {
+        this.mListener = listener;
+
+
     }
 }
